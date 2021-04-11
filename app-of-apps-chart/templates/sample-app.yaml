@@ -1,5 +1,6 @@
 {{- range .Values.clusters }}
 {{- if .apps.sampleApp.enabled }}
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -14,13 +15,11 @@ spec:
   project: default
   source:
     path: nginx-chart
-    repoURL: 'https://github.com/kanuahs/argocd-demo.git'
+    repoURL: 'https://github.com/MingZhang-YBPS/argocd-demo.git'
     targetRevision: {{ .apps.sampleApp.branch }}
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
 {{- end }}
----
-
 {{- end }}
