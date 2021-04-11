@@ -5,6 +5,8 @@ clusters:
     sampleApp:
       enabled: true
       branch: HEAD
+    prometheus:
+      enabled: false
 
 - name: beta
   destinationServer: https://172.26.253.111:6443
@@ -12,3 +14,5 @@ clusters:
     sampleApp:
       enabled: true
       branch: HEAD
+    prometheus:
+      enabled: false
