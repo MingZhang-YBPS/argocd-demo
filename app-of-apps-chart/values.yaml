@@ -1,6 +1,6 @@
 clusters:
 - name: alpha
-  destinationServer: https://172.26.253.108:6443
+  destinationServer: https://172.24.254.191:6443
   apps:
     sampleApp:
       enabled: true
@@ -9,7 +9,7 @@ clusters:
       enabled: false
 
 - name: beta
-  destinationServer: https://172.26.253.111:6443
+  destinationServer: https://172.24.252.233:6443
   apps:
     sampleApp:
       enabled: true
