@@ -15,4 +15,5 @@ clusters:
       enabled: true
       branch: HEAD
     prometheus:
-      enabled: false
+      enabled: true
+      version: "9.7.4"
