@@ -5,7 +5,7 @@ clusters:
     sampleApp:
       enabled: true
       branch: HEAD
-    prometheus:
+    falco:
       enabled: false
 
 - name: beta
